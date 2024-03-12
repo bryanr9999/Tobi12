@@ -1,0 +1,85 @@
+.html_iniciarsesion {
+    background-image: url('../../../public/images/iniciarSesion/fondoIniciar.jpeg');
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen de fondo */
+    height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+}
+
+.contenedorPrincipal {
+    margin: 5% auto; /* Cambiado el margen superior e inferior a un solo valor y centrado horizontalmente */
+    background: rgba(116, 126, 137, 0.6);
+    width: 90%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenedorDatos form {
+    width: 100%; /* Ajustado el ancho del formulario al 100% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Resto de los estilos... */
+
+.campoDato,
+.campoContraseña {
+    margin: 5% 0;
+    width: 80%;
+    max-width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 5%;
+}
+
+.recupe{
+    color: black;
+}
+
+.botonInicioSesion {
+    border-radius: 20px;
+    background-color: #C63F3F;
+    width: 80%;
+    height: 30px;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 5% 0;
+    padding-left: 5%;
+ 
+}
+
+.tituloPrincipal {
+    font-size: 16px;
+    text-align: center;
+}
+
+.etiquetaDato,
+.campoDato,
+.tituloPrincipal,
+.botonInicioSesion,
+.enlaceOlvido {
+    font-weight: bold;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedorPrincipal {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .campoDato,
+    .campoContraseña {
+        width: 90%;
+        max-width: none;
+    }
+}
